@@ -1,0 +1,104 @@
+body {
+    padding-top: 100px; /* Ajuste conforme a altura da navbar */
+    /* background-color: rgb(224, 224, 224); */
+    /* background-color: #ffdd0023; */
+    background-color: #a6dbff59;
+}
+
+.navbar-brand-name-1 {
+    color: #002776;
+    font-weight: 900;
+    font-size: 20px;
+    font-style: oblique;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand-name-2-B {
+    color: #338a0c;
+    font-weight: 900;
+    font-size: 20px;
+    font-style: oblique;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand-name-2-R {
+    color: #FFDF00;
+    font-weight: 900;
+    font-size: 20px;
+    font-style: oblique;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-link {
+    color: #002776;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    /* font-style: oblique; */
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    margin-left: 10px;
+}
+
+.nav-link:hover {  
+    /* color: #0e98ce; Cor do botão ao passar o mouse   */
+    color: #ffc400;
+}
+
+.nav-link.dropdown-toggle:focus {
+    color: #ffc400; /* Cor da fonte ao clicar (exemplo) */
+}
+
+.btn {  
+    display: inline-block; /* Garante que o botão se comporte como um botão padrão */  
+    padding: 5px 20px; /* Ajusta o espaçamento interno */  
+    font-size: 16px; /* Tamanho da fonte */  
+    font-weight: bold; /* Torna o texto mais grosso */  
+    border-radius: 10px; /* Borda arredondada */  
+    transition: background-color 0.4s, color 0.4s; /* Efeito de transição */  
+}  
+
+.form-control.mr-sm-2.search-bar {
+    width: 300px; 
+    padding: 8px;   
+    border: 2px solid #093a9cad;
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out;
+}
+
+.form-control.mr-sm-2.search-bar:focus {
+    width: 600px;
+}
+
+.btn-outline-success {  
+    color: #093a9c; /* Cor do texto */  
+    border: 2px solid #093a9cad; /* Cor da borda */  
+    background-color: transparent; /* Fundo transparente */  
+}  
+
+.btn-outline-success:hover {  
+    background-color: #093a9c; /* Cor de fundo ao passar o mouse */  
+    color: white; /* Muda a cor do texto ao passar o mouse */  
+    border: 2px solid #093a9cad;
+}  
+
+
+.btn.btn-primary.btn-lg {
+    background-color: #093a9c;
+}
+
+.btn.btn-primary.btn-lg:hover {
+    background-color: #ffc400;
+    border: 2px solid #ffc400;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+
+.btn.btn-secondary {
+    background-color: #093a9c;
+}
+
+.btn.btn-secondary:hover {
+    background-color: #ffc400;
+    border: 2px solid #ffc400;
+    transition: background-color 0.4s, color 0.4s;
+}

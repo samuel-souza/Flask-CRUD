@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+<main role="main">  
+    <div class="jumbotron">  
+        <div class="container">  
+            {% if user: %}
+                <h1 class="display-3" style="font-weight: 500;">Boas vindas, {{user}}.</h1> 
+            {% else: %}
+                <h1 class="display-3" style="font-weight: 500;">Boas vindas.</h1>  
+            {% endif %}
+            <p style="font-size: 18px; font-weight: 500;">
+            Estamos muito felizes em recebê-lo(a) em nossa comunidade online!<br>
+            Aqui, você tem acesso fácil a informações que vão facilitar o seu dia a dia, como notícias, orientações e serviços disponíveis para você.<br>
+            Conte conosco para tirar suas dúvidas, fazer sugestões e acompanhar as ações do governo.<br>
+            Compartilhe também suas opiniões e vamos construir juntos um futuro melhor para todos!
+            </p>  
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Saiba mais &raquo;</a></p>  
+        </div>  
+    </div>
+</main>
+{% endblock %}
+
+{% block content2 %}
+<div class="container">  
+    <div class="row">  
+        <div class="col-md-4">  
+            <h2>Conectar-se</h2>  
+            <p style="font-size: 18px; font-weight: 500;">Conecte-se com novas pessoas.</p>  
+            <p><a class="btn btn-secondary" href="#" role="button">Conhecer pessoas &raquo;</a></p>  
+        </div>  
+        <div class="col-md-4">  
+            <h2>Publicar</h2>  
+            <p style="font-size: 18px; font-weight: 500;">Publique suas opiniões e interaja com a comunidade.</p>  
+            <p><a class="btn btn-secondary" href="#" role="button">Ver publicações &raquo;</a></p>  
+        </div>  
+        <div class="col-md-4">  
+            <h2>Notícias</h2>  
+            <p style="font-size: 18px; font-weight: 500;">Acompanhe o que de novo acontece no Brasil.</p>  
+            <p><a class="btn btn-secondary" href="#" role="button">Veja detalhes &raquo;</a></p>  
+        </div>  
+    </div>  
+    <hr>  
+</div>
+{% endblock %}
+
+{% block content3 %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">  
+            <h2>Olá novamente</h2>  
+            <p style="font-size: 18px; font-weight: 500;">Entre em sua conta para ter acesso as funcionalidades.</p>  
+            <p><a href="{{ url_for('login') }}" class="btn btn-lg btn-secondary">Entrar &raquo;</a></p>  
+        </div>  
+        <div class="col-md-4">  
+            <h2>Faça parte</h2>  
+            <p style="font-size: 18px; font-weight: 500;">Caso ainda não possua uma conta, faça o cadastro clicando no botão abaixo.</p> 
+            <p><a href="{{ url_for('register') }}" class="btn btn-lg btn-secondary">Cadastrar-se &raquo;</a></p>
+        </div>  
+        <hr>
+    </div>
+</div>
+{% endblock %}
