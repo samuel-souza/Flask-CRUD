@@ -1,0 +1,116 @@
+* {  
+    box-sizing: border-box;  
+    font-family: "Merriweather Sans", sans-serif;  
+}  
+
+body {  
+    background-color: #a6dbff59;  
+}  
+
+#form {  
+    color: white;  
+    background-color: #009EDF;  
+    border-radius: 5px;  
+    width: 400px;  
+    padding: 40px;  
+    margin: 150px auto;  
+    box-shadow: -1px 3px 18px rgba(0, 0, 0, 0.75);  
+}  
+
+#form p {  
+    font-size: 1em;  
+    margin-bottom: 20px;  
+}  
+
+#form button {  
+    margin-top: 20px;
+    width: 100%;  
+    text-align: center;  
+    font-weight: bold;
+    color: gray;  
+    background-color: white;   
+    border: none;  
+    padding: 10px;  
+    border-radius: 5px;  
+    cursor: pointer;  
+}
+
+#form button:hover {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    font-size: 110%;
+    border: 2px solid #007BFF;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+#form .form-group {  
+    margin: 15px 0;  
+}  
+
+#form .form-group label {  
+    font-weight: bold;  
+    font-size: 0.9em;  
+}  
+
+#form .form-group .input-group {  
+    display: flex;  
+    align-items: center;  
+    border-radius: 5px;  
+    background-color: white; 
+}  
+
+#form .form-group .input-group .input-group-addon {  
+    background-color: #009EDF; 
+    color: white;  
+    border: none;  
+    padding: 10px;  
+}  
+
+#form .form-group .input-group input {  
+    padding: 10px;  
+    width: 100%;  
+    border: none;  
+}  
+
+#form .form-group input:focus {  
+    outline: none; /* Remove o contorno padrão */  
+}
+
+.alert-success {
+    position: absolute;
+    color: #338a0c; 
+    background: #e0f7fa;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    padding: 30px;
+    border-radius: 9px;
+    max-width: 800px;
+    font-size: 20px;
+}
+
+.alert-danger {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    background: #ffc400c4;
+    padding: 30px;
+    border-radius: 9px;
+    max-width: 800px;
+    font-size: 20px;
+}
+
+.btn-close-custom {
+    background-color: transparent; 
+    border: none; 
+    font-size: 28px; 
+    color: red; 
+    opacity: 1; 
+}
+
+.btn-close-custom:hover {
+    color: darkred; 
+    opacity: 0.7; 
+}
