@@ -1,15 +1,3 @@
-## 1.0 - Criar página para atualizar os dados de cadastro de um usuário
-    ## 1.1 Criar frontend ✅
-    ## 1.2 Criar backend e testar lógica na API ✅ 
-## 2.0 - Criar botão e ação para deletar conta ✅
-    ## 2.1 Criar botão (Pop-up) ✅
-    ## 2.2 Criar backend e testar lógica na API ✅
-## 3.0 - Realizar testes unitários e testes manuais ✅
-## 4.0 - Arrumar código
-## 5.0 - Enviar pro GitHub
-## 6.0 - Finalizar projeto com documentação (ver zap)
-
-
 from app import app, db, lm, bcrypt
 from flask import render_template, request, redirect, url_for, flash, jsonify, get_flashed_messages
 from flask_login import login_user, logout_user, current_user, login_required
