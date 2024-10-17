@@ -1,6 +1,5 @@
 # Flask framework
 ## CRUD (Create, Read, Update and Delete)
-<hr>
 
 **O objetivo desse projeto é praticar o desenvolvimento de API's usando o Python com o framework Flask, bem como as ferramentas complementares para desenvolvimento do projeto.**
 O projeto simula uma rede social, utilizando as tecnologias HTML, CSS e JS (+bootstrap) em seu frontend e Python (+Flask) em seu backend, também foi utilizado SQLite como banco de dados. Além disso, também foram realizados testes unitários utilizando ``pytest`` para testar as funcionalidades da aplicação.
