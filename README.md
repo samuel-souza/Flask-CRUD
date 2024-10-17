@@ -75,6 +75,9 @@ Em resumo,
 Essa rota inicial serve apenas para dar boas vindas ao usuário, além de permitir optar pela possibilidade de fazer login ou cadastrar-se.
 Após a escolha do usuário, será redirecionado para a o endpoint escolhido.
 
+![indexpage](/app/static/imgs/index.png)
+
+
 #### Rota de cadastro ``("/register")``
 
 Na rota de cadastro, o objetivo é realizar a primeira funcionalidade da API, o **CREATE**. Nesse endpoint, é possível realizar o cadastro no banco de dados da aplicação. É esperado que o usuário forneça informações como: 
@@ -87,23 +90,34 @@ Na rota de cadastro, o objetivo é realizar a primeira funcionalidade da API, o 
 
 Após o cadastro ser realizado com sucesso, o usuário deverá ser redirecionado a página de login. 
 
+
+![loginpage](/app/static/imgs/register.png)
+
 #### Rota de login ``("/login")``
 
 Na rota de login, é esperado que o usuário forneça o nome de usuário e senha registrados anteriormente.
 Se o login for sucedido, o usuário passa a estar autenticado e é permitido o usuário acessar a segunda funcionalidade da aplicação, a rota de leitura (**READ**). Além disso, o usuário deverá ser redirecionado a rota inicial, dessa vez com novas funcionalidades disponíveis para usuários logados e cadastrados.
 
+![alt text](/app/static/imgs/login.png)
+
 #### Rota de leitura ``("/data/get")``
 
 Na rota de leitura, é esperado que o usuário esteja autenticado para ter acesso ao conteúdo da rota. 
-Caso o usuário esteja autenticado corretamente (após login), o conteúdo disponível será uma lista de registros em JSON com todos os dados de todos os usuários cadastrados no banco de dados da aplicação (**READ**).  
+Caso o usuário esteja autenticado corretamente (após login), o conteúdo disponível será uma lista de registros em JSON com todos os dados (com exceção da senha) de todos os usuários cadastrados no banco de dados da aplicação (**READ**).  
+
+![dataget](/app/static/imgs/dataget.png)
+
+*Os dados mostrados na imagem foram cadastrados por meio dos testes unitários, não se tratando de pessoas reais.*
 
 #### Rota de inicial com usuário autenticado/após login ``("/home/<user>")``
 
-Na rota inicial após login, o usuário deverá ver novas funcionalidades, incluindo uma opção de **Configurações** na barra superior da página. Ao clicar nela, existem as opções:
+Na rota inicial após login, o usuário deverá ver novas funcionalidades na barra superior. Ao clicar em **Configurações** na barra superior da página, existem as opções:
 
 - **Realizar logout**: Para deslogar da conta criada (**Perderá acesso a rota de leitura até realizar o login novamente**).
 - **Atualizar Informações**: Terceira funcionalidade da API (**UPDATE**). Nessa opção, será redirecionado para uma página de atualização dos dados cadastrados em ``"/register"``.
 - **Deletar conta**: Quarta funcionalidade da API (**DELETE**). Nessa opção, a conta registrada será deletada do banco de dados da aplicação. Não conseguindo mais utilizar as informações anteriormente registradas para fazer login, até realizar o cadastro novamente.
+
+![index_logged](/app/static/imgs/index_logged.png)
 
 
 ## Executando testes
